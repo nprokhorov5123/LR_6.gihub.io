@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Мультимедійна сторінка – Шосткинська федерація дзюдо</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: #eef1fb;
+        color: #222;
+    }
+
+    header {
+        background: linear-gradient(135deg, #3f4bd8, #6a80ff);
+        padding: 25px;
+        text-align: center;
+        color: white;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    .container {
+        width: min(900px, 92%);
+        margin: 25px auto;
+    }
+
+    .card {
+        background: #fff;
+        padding: 25px;
+        border-radius: 14px;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+        margin-bottom: 25px;
+    }
+
+    h2 {
+        margin-top: 0;
+        font-size: 22px;
+        color: #3f4bd8;
+    }
+
+    /* Карта */
+    .map {
+        width: 100%;
+        height: 330px;
+        border-radius: 12px;
+    }
+
+    /* Відео */
+    .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        border-radius: 12px;
+    }
+    .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        border-radius: 12px;
+    }
+
+    /* Аудіо */
+    audio {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* Соцмережі */
+    .socials a {
+        margin-right: 12px;
+        font-size: 18px;
+        text-decoration: none;
+        color: #3f4bd8;
+        font-weight: 600;
+    }
+</style>
+</head>
+
+<body>
+
+<header>Лабораторна робота 6</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>📍 Карта (Спортивна секція дзюдо Шостка)</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d207.0036293669067!2d33.47455013965356!3d51.86296588016703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1suk!2sua!4v1777551807986!5m2!1suk!2sua"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+                    
+                </iframe>
+    </div>
+
+    <div class="card">
+        <h2>🎥 Відео</h2>
+
+        <div class="video-wrapper">
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/y0sF5xhGreA?si=uBectALWFyqkeaWD" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>🎵 Музика</h2>
+        <p><b>System of a Down – Toxicity</b></p>
+        <audio controls>
+            <source src="system-of-a-down-toxicity.mp3" type="audio/mpeg">
+            Ваш браузер не підтримує audio елемент.
+        </audio>
+    </div>
+
+    <div class="card">
+        <h2>📱 Соціальні мережі</h2>
+        <div class="social-buttons">
+                <a href="https://facebook.com" target="_blank" class="social-btn facebook">
+                    <span>📘</span> Facebook
+                </a>
+                <a href="https://instagram.com" target="_blank" class="social-btn instagram">
+                    <span>📷</span> Instagram
+                </a>
+                <a href="https://youtube.com" target="_blank" class="social-btn youtube">
+                    <span>▶️</span> YouTube
+                </a>
+                <a href="https://telegram.org" target="_blank" class="social-btn telegram">
+                    <span>✈️</span> Telegram
+                </a>
+            </div>
+    </div>
+
+</div>
+
+</body>
+</html>
